@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: "Roboto";
+    background: #2196f3;
+}
+
+header {
+    padding: 17px;
+    background: #1976d2;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.row, figure, h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h2 {
+    color: #fff;
+    margin: 7px !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+[class*="col-"],
+[class^="col-"] {
+    padding: 5px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 7px 18px;
+    border: none;
+    border-radius: 3px;
+    background: #1976d2;
+    color: #fff;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.button-container button:hover {
+    background: #2780da;
+}
+
+/* ->Estilos generales */
+
+/* Body */
+
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-block;
+    width: 80%;
+    padding: 20px;
+}
+
+/* ->Body */
+
+/* Imágenes */
+
+.images-cards figure {
+    position: relative;
+}
+
+.images-cards img {
+    height: 240px;
+}
+
+.images-cards figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 44px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.images-cards figure figcaption:hover {
+    opacity: 1;
+}
+
+/* ->Imágenes */
+
+/* Selector de imágenes */
+
+#Images .add-new-photo {
+    display: flex;
+    border: 4px dashed #fff;
+    height: 100%;
+    min-height: 240px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+#Images .add-new-photo.first:hover {
+    background: rgba(255, 255, 255, 0.17);
+}
+
+#add-photo-container input {
+    display: none;
+}
+
+/* ->Selector de imágenes */
